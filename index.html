@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+<body>
+    
+    
+   <div class="container">
+
+
+     <div class="calculator">
+        <div class="title">
+            <strong class="calcu">Calcu<Span>lator</Span></strong>
+        </div>
+
+        <div class="input-form">
+            <input type="text" id="txtInput" placeholder="0">
+        </div>
+    
+        <!-----<i id="icon" class="fa-solid fa-sun"></i>
+            <img src="img/moon.png" id="icon" class="moon" width="22px" height="22px" alt="">------->
+
+        <div class="row">
+            <button class="btn-1 btn-3"><img src="img/moon.png" id="icon" class="moon" width="22px" height="22px" alt=""></button>
+            <button class="btn-3 btn" onclick="clrData()">AC</button>
+            <button class="btn btn-3" onclick="storeData('%')">%</button>
+            <button class="btn btn-3" onclick="storeData('/')"><i class="fa-solid fa-divide"></i></button>
+        </div>
+    
+        <div class="row">
+            <button class="btn" onclick="storeData('7')" value="7">7</button>
+            <button class="btn" onclick="storeData('8')" >8</button>
+            <button class="btn" onclick="storeData('9')" >9</button>
+            <button class="btn btn-3" onclick="storeData('*')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    
+        <div class="row">
+            <button class="btn" onclick="storeData('4')">4</button>
+            <button class="btn" onclick="storeData('5')">5</button>
+            <button class="btn" onclick="storeData('6')">6</button>
+            <button class="btn btn-3" onclick="storeData('-')"><i class="fa-solid fa-minus"></i></button>
+        </div>
+    
+        <div class="row">
+            <button value="1" onclick="storeData('1')" class="btn">1</button>
+            <button value="2" class="btn" onclick="storeData('2')">2</button>
+            <button value="3"  class="btn" onclick="storeData('3')">3</button>
+            <button value="+"  class="btn btn-3" onclick="storeData('+')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    
+        <div class="row">
+            <button value="0"  class="btn" onclick="storeData('0')">0</button>
+            <button value="."  class="btn" onclick="storeData('.')">.</button>
+        
+            <button onclick="calData()" class="btn-equal btn btn-3" style="width: 120px; border-radius: 40px;"><i class="fa-solid fa-equals"></i></button>
+        </div>
+     </div>
+   </div>
+
+   
+  
+    <script src="app.js"></script>
+</body>
+
+</html>
