@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    font-family : sans-serif ;
+    outline: none;
+}
+
+
+:root{
+    --primary-color : #ecf0f3;
+    --secondary-color :#ffffff;
+    --tertiary-color : #b1e7e8;
+    --text-color : black;
+    --box-shadow : rgba(0,0,0,.16);
+}
+ 
+
+
+.dark-theme{
+    --primary-color : #0a1437;
+    --secondary-color : #1f2b50;
+    --tertiary-color : #025cd2;
+    --text-color :#ffffff;
+    --box-shadow : rgba(130, 98, 98, 0.16);
+}
+
+.moon{
+    background-color: var(--tertiary-color);
+}
+
+
+
+.container{
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius : 30px;
+    border-radius : 30px;
+    box-shadow: -5px -5px 12px var(--secondary-color),
+    5px 5px 12px var(--box-shadow);
+}
+
+.input-form input{
+        height: 70px;
+        width : 260px;
+        background-color: var(--primary-color);
+        box-shadow: -5px -5px 12px var(--secondary-color),
+        5px 5px 12px var(--box-shadow);
+        border: none;
+        border-radius: 30px;
+        color : rgb(70, 70, 70);
+        font-size: 50px;
+        text-align: end;
+        margin :auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding : 20px ;
+    }
+
+.btn,
+.btn-1{
+    height: 48px;
+    width : 48px;
+    background-color: var(--primary-color);
+    box-shadow: -5px -5px 12px var(--secondary-color),
+                5px 5px 12px var(--box-shadow);
+    border: none;
+    border-radius: 50%;
+    margin : 8px;
+    font-size: 22px;
+    color : var(--text-color);
+}
+
+.btn-3,.btn-1{
+    background-color: var(--tertiary-color);
+}
+
+.fa-solid{
+    background-color: var(--tertiary-color);
+}
+
+.fa-rectangle-xmark{
+    background: none;
+}
+
+.btn:hover{
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+    opacity: 0.8;
+}
+
+.btn-1:hover{
+    border-radius: 10px;
+}
+
+.fa-sun{
+    background-color: var(--tertiary-color);
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.title span{
+    color : red;
+}
+
